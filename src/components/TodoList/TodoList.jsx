@@ -5,11 +5,8 @@ function TodoList( { todos }) {
     console.log(todos);
     return (
         <section>
-            <TodoItem text="Nauczyć się Reacta" />
-            <TodoItem text="Zrobić zadanie domowe" />
-            <TodoItem text="Powtórzyć JavaScript" />
             {todos.map((el, index) => (
-                <todoItem key={index} text={el} />
+                <TodoItem key={index} text={el} />
             ))}
         </section>
     );
