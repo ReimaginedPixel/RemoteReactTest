@@ -21,6 +21,7 @@ function App() {
     <UserInfo name={name} age={age}/>
     <TodoForm setTodos={setTodos}/>
     <TodoList todos = {todos}/>
+    
 
     </>
   );
