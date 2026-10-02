@@ -4,6 +4,7 @@ import './App.css'
 import UserInfo from './components/UserInfo/UserInfo.jsx'
 import TodoForm from './components/TodoForm/TodoForm.jsx'
 import TodoList from './components/TodoList/TodoList.jsx'
+import TestComp from './components/TestComp/TestComp.jsx'
 
 function App() {
   const name = "Janusz";
@@ -21,7 +22,7 @@ function App() {
     <UserInfo name={name} age={age}/>
     <TodoForm setTodos={setTodos}/>
     <TodoList todos = {todos}/>
-    
+    <TestComp></TestComp>
 
     </>
   );

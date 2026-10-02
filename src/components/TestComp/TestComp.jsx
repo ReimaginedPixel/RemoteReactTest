@@ -6,12 +6,16 @@ function TestComp() {
     return (
         <section>
             <p>Wartość: {value}</p>
-            <button onClick={ToggleValue}>Toggle</button>
+            <button onClick={toggleValue}>Toggle</button>
         </section>
+    )
+
+    function toggleValue() {
+        setValue(prevValue => prevValue === 0 ? 1 : 0)
 }
 
-function ToggleValue() {
-    setValue(prevValue => prevValue === '0' ? '1' : '0')
 }
+
+
 
 export default TestComp;
